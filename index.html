@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOP | Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Weather</h1>
+      <form id="location-form">
+        <legend>Location</legend>
+        <fieldset>
+          <input type="text" name="location" id="location" placeholder="Enter location" data-location="location"
+            required>
+          <button type="submit">Go</button>
+        </fieldset>
+      </form>
+    </nav>
+  </header>
+  <main>
+    <div id="main-container">
+      <!-- TODO: pretty response.json() output -->
+    </div>
+  </main>
+  <footer>
+    <p>Made by <a href="https://github.com/sean-garwood">Sean Garwood</a> for <a href="https://theodinproject.com">The
+        Odin Project</a></p>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
