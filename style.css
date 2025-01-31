@@ -5,6 +5,7 @@
   --text-color: #333333;
   --font-size: 16px;
   --line-height: 1.5;
+  --accent: #ffffff;
 }
 
 a {
@@ -19,8 +20,6 @@ body {
   color: var(--text-color);
   font-size: var(--font-size);
   line-height: var(--line-height);
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -34,17 +33,17 @@ legend {
 
 header {
   background: var(--primary-color);
-  color: #ffffff;
+  color: var(--secondary-color);
   padding: 10px 0;
   text-align: center;
 }
 
-h1 {
+h1, h2{
   margin: 0;
 }
 
-li {
-  list-style: none;
+h1 {
+  color: var(--secondary-color);
 }
 
 nav {
@@ -53,16 +52,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 20px;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 15px;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 main {
@@ -74,6 +63,25 @@ footer {
   text-align: center;
   padding: 10px 0;
   background: var(--primary-color);
-  color: #ffffff;
+  color: var(--accent);
   margin-top: auto;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.day {
+  max-width: 30vw;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+  background: var(--secondary-color);
+}
+
+#timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px;
 }
