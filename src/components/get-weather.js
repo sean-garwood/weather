@@ -1,4 +1,4 @@
-async function logWeather(loc) {
+async function getWeather(loc) {
   let weather = await getWeatherTimelineJSON(loc);
 
   try {
@@ -34,4 +34,4 @@ async function logWeather(loc) {
   }
 }
 
-export { logWeather };
+export { getWeather };
