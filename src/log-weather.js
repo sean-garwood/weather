@@ -2,7 +2,7 @@ async function logWeather(loc) {
   let weather = await getWeatherTimelineJSON(loc);
 
   try {
-    console.log(weather);
+    return weather;
   } catch (error) {
     throw new Error(error);
   }
@@ -27,7 +27,7 @@ async function logWeather(loc) {
     let response = await fetch(url);
 
     try {
-      return response.json();
+      return response;
     } catch (error) {
       throw new Error(error);
     }
